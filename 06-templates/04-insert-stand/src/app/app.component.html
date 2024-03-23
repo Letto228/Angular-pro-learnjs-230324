@@ -8,7 +8,10 @@
 
 <div #viewContainer></div>
 
-<ng-template #declaratedTemplateRef>
-  <h3>Its template</h3>
+<ng-container *ngTemplateOutlet="declaratedTemplateRef"></ng-container>
+<ng-container *ngComponentOutlet="component$ | async"></ng-container>
+
+<ng-template #declaratedTemplateRef let-contextName="name" let-nameDefault>
+  <h3>Its template {{contextName}} {{nameDefault}}</h3>
   <app-declarated></app-declarated>
 </ng-template>

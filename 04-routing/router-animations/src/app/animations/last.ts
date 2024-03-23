@@ -8,7 +8,7 @@ import {
   query,
 } from "@angular/animations";
 
-export const myAnimationSecond = trigger("myAnimation", [
+export const myAnimationLast = trigger("myAnimation", [
   transition("* <=> *", [
     group([
       query(

@@ -9,7 +9,7 @@ import {
   transition,
 } from "@angular/animations";
 
-export const myAnimationLast = trigger("myAnimation", [
+export const myAnimationSecond = trigger("myAnimation", [
   transition("* <=> *", [
     query(":enter, :leave", style({ position: "fixed", width: "100%" }), {
       optional: true,

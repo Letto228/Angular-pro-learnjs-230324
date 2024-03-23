@@ -9,5 +9,11 @@ export const pagesRoutes: Route[] = [
     {
         path: 'home',
         loadComponent: () => import('./home/home.component').then(m => m.HomeComponent),
+        providers: [
+            {
+                provide: 'name',
+                useValue: 'Egor',
+            }
+        ]
     },
 ]

@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
       cat: <strong>{{phrase}}</strong>
     </p>
   `,
+  providers: [
+    {
+      provide: 'name',
+      useValue: 'CatComponent',
+    }
+  ]
 })
 export class CatComponent {
   phrase = 'meow'

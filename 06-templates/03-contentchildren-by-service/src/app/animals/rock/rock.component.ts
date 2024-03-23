@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
     <p>
       rock
     </p>
-  `
+  `,
 })
 export class RockComponent {}

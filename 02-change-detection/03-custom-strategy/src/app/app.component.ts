@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, inject } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -15,5 +15,7 @@ export class AppComponent {
     setInterval(() => {
       this.counter += 1;
     }, 1000);
+
+    inject(ChangeDetectorRef).detach();
   }
 }

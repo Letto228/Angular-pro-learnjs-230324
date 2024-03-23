@@ -14,7 +14,12 @@ import { HostComponent } from './host/host.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'name',
+      useValue: 'AppModule',
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

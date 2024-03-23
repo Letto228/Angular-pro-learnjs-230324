@@ -8,6 +8,12 @@ bootstrapApplication(AppComponent, {
       {
         path: '',
         loadChildren: () => import('./app/pages/routes').then(m => m.pagesRoutes),
+        providers: [
+          {
+              provide: 'name',
+              useValue: 'Egor',
+          }
+        ]
       },
       {
         path: 'login',
